@@ -1,11 +1,17 @@
 <?php
+
 if ($api == 'clientes') {
   if ($method == "GET") {
-    $data_base = DB::connect();
-    $resposta = $db->prepare("SELECT * FROM clientes ORDER by nome");
-    $resposta->execute();
-    $objeto = $resposta->fetchAll(PDO::FETCH_OBJ);
-    var_dump($data_base);
+    include_once ("get.php");
   }
+  if ($method == "POST") {
+    include_once ("post.php");
+  }
+  if ($method == "POST" && $_POST['_method'] == "PUT") {
+    include_once ("put.php");
+  }
+
 }
+
+
 ?>

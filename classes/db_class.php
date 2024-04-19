@@ -9,7 +9,11 @@ class DB
     $db_pass = '';
     $db_name = 'api_rest_php';
 
-    return new PDO("mysql:host={$db_host};dbname={$db_name};charset=UTF8;", $db_user, $db_pass);
+    try {
+      return new PDO("mysql:host={$db_host};dbname={$db_name};charset=UTF8;", $db_user, $db_pass);
+    } catch (PDOException $e) {
+      echo 'Erro ao conectar com o banco de dados: ' . $e->getMessage();
+    }
   }
 }
 

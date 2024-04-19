@@ -30,5 +30,6 @@ if (isset($path[2])) {
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+include_once "classes/db_class.php";
 include_once "api/clientes/clientes.php";
 ?>
