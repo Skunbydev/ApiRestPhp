@@ -13,6 +13,4 @@ if ($api == 'clientes') {
   }
 }
 
-
-
 ?>

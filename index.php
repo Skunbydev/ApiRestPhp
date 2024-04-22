@@ -30,6 +30,12 @@ if (isset($path[2])) {
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+#Classes
 include_once "classes/db_class.php";
+include_once "classes/jwt.class.php";
+include_once "classes/usuarios.class.php";
+
+#Api
 include_once "api/clientes/clientes.php";
+include_once "api/usuarios/usuarios.php";
 ?>

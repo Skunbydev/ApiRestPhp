@@ -37,5 +37,4 @@ if ($acao == 'adicionar' && $parametro == '') {
   }
 }
 
-
 ?>

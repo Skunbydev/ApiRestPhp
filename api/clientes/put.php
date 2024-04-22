@@ -31,9 +31,4 @@ if ($acao == 'update' && $parametro != '') {
 
 }
 
-
-
-
-
-
 ?>
